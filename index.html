@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2025-2026 日本雪场规划</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <div>
+        <p class="eyebrow">妙高 · 野泽 · 八海山</p>
+        <h1>雪场资料速查中心</h1>
+        <p class="lead">
+          集中整理妙高杉之原、ARAI、野泽温泉与八海山 4
+          个雪场的关键信息：雪道图、标高差、车程、实时天气与降雪预报链接，方便根据雪况灵活排布滑行计划。
+        </p>
+      </div>
+    </header>
+
+    <section class="map-section">
+      <div class="map-copy">
+        <h2>区域概览</h2>
+        <p>
+          4 个雪场沿妙高—野泽—八海山一线分布，从妙高核心区域向东延伸至传统温泉村和南鱼沼，车程 20
+          分钟至 2 小时不等。右侧静态位置图标注了每个雪场的方位，可离线查看。
+        </p>
+        <ul>
+          <li>蓝色标记：妙高核心（杉之原、ARAI）</li>
+          <li>绿色标记：长野北部（野泽温泉）</li>
+          <li>黄色标记：南鱼沼（八海山）</li>
+        </ul>
+      </div>
+      <figure class="map-figure">
+        <img src="assets/resorts.png" alt="妙高、野泽、八海山雪场相对位置图" />
+        <figcaption>若需互动导航，可在下方雪场卡片中打开 Google Maps 链接。</figcaption>
+      </figure>
+    </section>
+
+    <main id="resort-grid" class="resort-grid" aria-live="polite"></main>
+
+    <section class="notes">
+      <h2>如何使用</h2>
+      <ol>
+        <li>根据当日雪况（Snow-Forecast 链接）决定区域与雪场。</li>
+        <li>点击“天气”获取 Windy 逐时风/温趋势，快速判断能见度。</li>
+        <li>通过“雪道图”查看线路规划，可搭配本地离线图片/PDF。</li>
+      </ol>
+      <p>
+        若需更新车程或住宿排期，可在 <code>script.js</code>
+        中修改对应雪场数据即可同步渲染。
+      </p>
+    </section>
+
+    <footer>
+      <p>最后更新：2025-02 · 妙高 & 八海山区域雪场资料</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
